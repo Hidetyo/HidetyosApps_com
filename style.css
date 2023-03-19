@@ -1,0 +1,256 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic Styles */
+body {
+  font-family: 'Climate Crisis', cursive;
+  font-family: 'M PLUS 1p', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  padding-left: 30px;
+  padding-right: 60px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-left img {
+  width: 100px;
+  height: auto;
+}
+
+.header-right {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 50px;
+}
+
+.header-right button {
+  margin-left: 1rem;
+}
+
+@media screen and (max-width: 1000px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin-top: 10px;
+  }
+
+  .header-left {
+    margin-left: 60px;
+    text-align: center;
+  }
+
+  .header-right {
+    display: none;
+  }
+
+  .lang-switcher {
+    margin-left: 20px;
+    margin-top: -10px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .intro {
+    margin-top: 200px;
+    margin-bottom: 300px;
+    margin-left: 100px;
+    display: flex;
+  }
+
+  .intro .image {
+    width: 400px;
+    height: auto;
+    margin-top: -50px;
+    margin-left: 400px;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .intro {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .intro .image {
+    width: 300px;
+    height: auto;
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  margin-top: 60px;
+  margin-bottom: 5px;
+  margin-left: 30px;
+  font-size: 30px;
+}
+
+h3 {
+  font-size: auto;
+}
+
+p {
+  margin-left: 40px;
+  font-size: 16px;
+}
+
+#nomargin {
+  margin-left: 4px;
+  font-size: 16px;
+}
+
+#title{
+  font-size: 18px;
+  white-space: nowrap;
+}
+
+@media screen and (min-width: 700px) {
+  main {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    margin-top: 60px;
+    margin-bottom: 5px;
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  #nomargin {
+    margin-left: 4px;
+    font-size: 12px;
+  }
+
+  .intro .image {
+    width: 250px;
+    height: auto;
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+
+  main {
+    margin: 0 auto;
+  }
+}
+
+.lang-switcher {
+  display: flex;
+}
+
+.lang-switcher button+button {
+  margin-left: 16px;
+}
+
+li {
+  margin-left: 40px;
+}
+
+.works {
+  margin-top: 32px;
+}
+
+.work-list li {
+  margin-bottom: 16px;
+}
+
+.work-list h4 {
+  margin-bottom: 8px;
+}
+
+.work-description {
+  margin-left: 16px;
+}
+
+.menubutton {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+.menubutton:hover {
+  background-color: #f4f4f4;
+}
+
+
+.tab {
+  border-bottom: 1px solid #ddd;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-left: 40px;
+}
+
+.tab button {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+.tab button:hover {
+  background-color: #f4f4f4;
+}
+
+.tab button:focus {
+  outline: none;
+}
+
+.tab .active {
+  background-color: #ddd;
+}
+
+.tabcontent {
+  display: none;
+}
+
+/* Language-specific Styles */
+.lang-en .lang-switcher button:nth-child(1),
+.lang-ja .lang-switcher button:nth-child(2),
+.lang-en .lang-ja,
+.lang-ja .lang-en {
+  display: none;
+}
