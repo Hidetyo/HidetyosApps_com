@@ -1,8 +1,12 @@
-openTab(event, 'all')
+if (window.location.pathname === "/index.html") {
+  openTab(event, 'all')
+}
 
-window.onload = function() {
-  var lang = sessionStorage.getItem("lang") || "ja";
+var lang = localStorage.getItem("lang");
+if (lang) {
   switchLang(lang);
+} else {
+  switchLang("ja");
 }
 
 function openTab(evt, tabName) {
@@ -29,5 +33,5 @@ function switchLang(lang) {
   for (i = 0; i < langElements.length; i++) {
     langElements[i].style.display = "none";
   }
-  sessionStorage.setItem("lang", lang);
+  localStorage.setItem("lang", lang);
 }
