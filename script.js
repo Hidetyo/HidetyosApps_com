@@ -1,11 +1,9 @@
-if (window.navigator.language == "ja") {
-  switchLang('ja');
-}
-else {
-  switchLang('en')
-}
 openTab(event, 'all')
 
+window.onload = function() {
+  var lang = sessionStorage.getItem("lang") || "ja";
+  switchLang(lang);
+}
 
 function openTab(evt, tabName) {
   var i, tabcontent, tablinks;
@@ -31,4 +29,5 @@ function switchLang(lang) {
   for (i = 0; i < langElements.length; i++) {
     langElements[i].style.display = "none";
   }
+  sessionStorage.setItem("lang", lang);
 }
