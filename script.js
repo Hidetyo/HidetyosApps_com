@@ -14,6 +14,11 @@ if (lang) {
   }
 }
 
+window.onload = function () {
+  var content = document.getElementById("content");
+  content.classList.remove("hidden");
+}
+
 function openTab(evt, tabName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
