@@ -1,7 +1,3 @@
-if (window.location.pathname === "/index.html") {
-  openTab(event, 'all')
-}
-
 var lang = localStorage.getItem("lang");
 if (lang) {
   switchLang(lang);
@@ -13,6 +9,10 @@ if (lang) {
     switchLang('en')
   }
 }
+
+window.onload = function () {
+  document.body.style.visibility = "visible";
+};
 
 function openTab(evt, tabName) {
   var i, tabcontent, tablinks;
