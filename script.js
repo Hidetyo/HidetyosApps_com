@@ -6,7 +6,12 @@ var lang = localStorage.getItem("lang");
 if (lang) {
   switchLang(lang);
 } else {
-  switchLang("ja");
+  if (window.navigator.language == "ja") {
+    switchLang('ja');
+  }
+  else {
+    switchLang('en')
+  }
 }
 
 function openTab(evt, tabName) {
