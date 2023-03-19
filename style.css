@@ -78,7 +78,7 @@ header {
 @media screen and (min-width: 1400px) {
   .intro {
     margin-top: 200px;
-    margin-bottom: 300px;
+    margin-bottom: 200px;
     margin-left: 100px;
     display: flex;
   }
@@ -254,7 +254,8 @@ li {
   border-bottom: 1px solid #ddd;
   justify-content: space-between;
   margin-bottom: 20px;
-  margin-left: 40px;
+  margin-left: 33px;
+  margin-right: 33px;
 }
 
 .tab button {
