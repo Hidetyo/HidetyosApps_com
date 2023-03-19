@@ -11,33 +11,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=M+PLUS+1p:wght@300;700&display=swap"
     rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
-  <header>
-    <header>
-      <div class="header-left">
-        <b class="lang-ja" id="title"> 藤澤秀彦 - ポートフォリオサイト</b>
-        <b class="lang-en" id="title">Hidehiko Fujisawa - Portfolio </b>
-      </div>
-      <div class="header-right">
-        <div class="lang-ja">
-          <button class="menubutton">ホーム</button>
-          <button class="menubutton">製作物</button>
-          <button class="menubutton">ご連絡</button>
-        </div>
-        <div class="lang-en">
-          <button class="menubutton">Home</button>
-          <button class="menubutton">Works</button>
-          <button class="menubutton">Contact</button>
-        </div>
-      </div>
-    </header>
-    <nav class="lang-switcher">
-      <button class="menubutton" onclick="switchLang('ja')">日本語</button>
-      <button class="menubutton" onclick="switchLang('en')">English</button>
-    </nav>
-  </header>
+  <div id="header"></div>
+  <script>
+    $(function () {
+      $('#header').load('./header.html');
+    });
+  </script>
   <main>
     <section class="intro">
       <div>
