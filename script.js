@@ -40,3 +40,13 @@ function switchLang(lang) {
   }
   localStorage.setItem("lang", lang);
 }
+
+if (document.URL.match(index.html)) {
+  const hamburgerButton = document.querySelector('.hamburger-button');
+  const navMenu = document.querySelector('.nav-menu');
+
+  hamburgerButton.addEventListener('click', () => {
+    hamburgerButton.classList.toggle('active');
+    navMenu.classList.toggle('active');
+  });
+}
