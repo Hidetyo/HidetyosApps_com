@@ -49,6 +49,70 @@ header {
   margin: 0 0 0 auto
 }
 
+.work-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-left: 60px;
+  margin-right: 60px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.work-item:hover {
+  opacity: 0.8;
+}
+
+.work-image {
+  flex-basis: 25%;
+  margin-right: 20px;
+  min-width: 150px;
+}
+
+.work-image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 300px;
+  max-height: 400px;
+}
+
+.work-info {
+  flex-basis: 60%;
+}
+
+.work-title {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+  margin-left: 12px;
+  white-space: nowrap;
+}
+
+.work-description {
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 800px) {
+  .work-item {
+    flex-direction: column;
+  }
+
+  .work-image {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .work-image {
+    flex-basis: 40%;
+  }
+
+  .work-title {
+    white-space:inherit;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   header {
     display: flex;
@@ -112,6 +176,12 @@ header {
   }
 }
 
+iframe {
+  aspect-ratio:16 / 9;
+  max-width: 1300px;
+  margin-bottom: -50px;
+  }
+
 h1 {
   font-size: 50px;
 }
@@ -124,11 +194,11 @@ h2 {
 }
 
 h3 {
+  margin-left: 30px;
   font-size: auto;
 }
 
 p {
-  margin-left: 33px;
   font-size: 16px;
 }
 
@@ -289,6 +359,14 @@ li {
 
 .work-description {
   margin-left: 16px;
+}
+
+.detail-description{
+  margin-left: 30px;
+}
+
+.skillList{
+  margin-left: 30px;
 }
 
 .menubutton {

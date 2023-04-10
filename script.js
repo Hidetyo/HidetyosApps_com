@@ -12,20 +12,26 @@ if (lang) {
 
 window.onload = function () {
   document.body.style.visibility = "visible";
+  openTab('all');
 };
 
-function openTab(evt, tabName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
+function openTab(tabName) {
+  const elements = document.querySelectorAll(`.research, .hobby`);
+  for (let i = 0; i < elements.length; i++) {
+    elements[i].style.display = 'none';
   }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  if (tabName == 'all') {
+    const dispelements = document.querySelectorAll(`.research, .hobby`);
+    for (let i = 0; i < elements.length; i++) {
+      dispelements[i].style.display = 'inline';
+    }
   }
-  document.getElementById(tabName).style.display = "block";
-  evt.currentTarget.className += " active";
+  else {
+    const dispelements = document.querySelectorAll(`.${tabName}`);
+    for (let i = 0; i < elements.length; i++) {
+      dispelements[i].style.display = 'inline';
+    }
+  }
 }
 
 function switchLang(lang) {
