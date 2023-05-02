@@ -109,7 +109,7 @@ header {
   }
 
   .work-title {
-    white-space:inherit;
+    white-space: inherit;
   }
 }
 
@@ -177,10 +177,10 @@ header {
 }
 
 iframe {
-  aspect-ratio:16 / 9;
+  aspect-ratio: 16 / 9;
   max-width: 1300px;
   margin-bottom: -50px;
-  }
+}
 
 h1 {
   font-size: 50px;
@@ -309,6 +309,10 @@ footer li {
     font-size: 12px;
   }
 
+  ul {
+    font-size: 12px;
+  }
+
   #nomargin {
     margin-left: 4px;
     font-size: 12px;
@@ -361,11 +365,18 @@ li {
   margin-left: 16px;
 }
 
-.detail-description{
+.detail-description {
   margin-left: 30px;
 }
 
-.skillList{
+.detail-image {
+  max-width: 80%;
+  margin: auto;
+  display: block;
+  margin-top: 20px;
+}
+
+.skillList {
   margin-left: 30px;
 }
 
@@ -374,6 +385,16 @@ li {
   border: none;
   cursor: pointer;
   padding: 10px 20px;
+}
+
+.detailButton {
+  display: block;
+  margin: auto;
+  border: none;
+  cursor: pointer;
+  margin-top: 60px;
+  padding: 10px 20px;
+  background-color: #ececec;
 }
 
 .menubutton:hover {
