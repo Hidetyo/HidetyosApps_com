@@ -29,7 +29,7 @@ header {
 }
 
 .header-left img {
-  width: 100px;
+  width: 230px;
   height: auto;
 }
 
@@ -45,6 +45,7 @@ header {
 }
 
 .lang-switcher {
+  display: flex;
   align-items: right;
   margin: 0 0 0 auto
 }
@@ -119,8 +120,8 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100px;
-    margin-top: 10px;
+    height:80px;
+    margin-top: 0px;
   }
 
   .header-left {
@@ -133,7 +134,8 @@ header {
   }
 
   .lang-switcher {
-    align-items: center;
+    display: none;
+    align-items: right;
     margin: 0 auto 0 auto;
     margin-top: 10px;
   }
@@ -141,39 +143,26 @@ header {
 
 @media screen and (min-width: 1400px) {
   .intro {
-    margin-top: 200px;
-    margin-bottom: 200px;
+    margin-top: 0px;
+    margin-bottom: 20px;
     margin-left: 100px;
     display: flex;
   }
 
-  .intro .image {
-    width: 400px;
-    height: auto;
-    margin-top: -50px;
-    margin-left: 400px;
-    padding: 0;
-  }
+
 }
 
 @media screen and (max-width: 1400px) {
   .intro {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 0px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  .intro .image {
-    width: 300px;
-    height: auto;
-    padding: 0;
-    display: block;
-    margin: 0 auto;
-    margin-top: 100px;
-  }
+
 }
 
 iframe {
@@ -242,12 +231,12 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-left: 60px;
-  margin-right: 60px;
+  margin-left: 30px;
+  margin-right: 10px;
 }
 
 .container img {
-  width: 48%;
+  width: 30%;
   margin-bottom: 1.5%;
   margin-left: 1.5%;
 }
@@ -294,6 +283,11 @@ footer li {
   margin-left: 20px;
 }
 
+.intro img {
+  width: 100%;
+ 
+}
+
 @media screen and (max-width: 700px) {
   h1 {
     font-size: 40px;
@@ -323,22 +317,9 @@ footer li {
     font-size: 10px;
   }
 
-  .intro .image {
-    width: 250px;
-    height: auto;
-    padding: 0;
-    display: block;
-    margin: 0 auto;
-    margin-top: 100px;
-  }
-
   main {
     margin: 0 auto;
   }
-}
-
-.lang-switcher {
-  display: flex;
 }
 
 .lang-switcher button+button {
