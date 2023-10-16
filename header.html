@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hidehiko Fujisawa - Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="header" href="header.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,18 +14,20 @@
 <body>
     <header>
         <div class="header-left">
-            <a href="works.html"> <img src="/img/logo.png"></a>
+            <a href="index.html"> <img src="/img/logo.png"></a>
         </div>
         <div class="header-right">
             <div class="lang-ja" lang="ja">
                 <button class="menubutton" onclick="location.href='./index.html'">ホーム</button>
                 <button class="menubutton" onclick="location.href='./works.html'">製品</button>
                 <button class="menubutton" onclick="location.href='./contact.html'">ご連絡</button>
+                <button class="menubutton lang-switcher-mini" onclick="switchLang('en')">English</button>
             </div>
             <div class="lang-en" lang="en">
                 <button class="menubutton" onclick="location.href='./index.html'">Home</button>
                 <button class="menubutton" onclick="location.href='./works.html'">Works</button>
                 <button class="menubutton" onclick="location.href='./contact.html'">Contact</button>
+                <button class="menubutton lang-switcher-mini" onclick="switchLang('ja')">日本語</button>
             </div>
         </div>
         <nav class="lang-switcher">
